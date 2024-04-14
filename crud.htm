@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud Operation</title>
+    <link rel="stylesheet" type="text/css" href="crud.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CRUD</h1>
+        <form autocomplete="off" onsubmit="onFormSubmit()">
+            <div class="form-group">
+                <label for="productCode">Product Code</label>
+                <input type="text" name="productCode" id="productCode">
+            </div>
+            <div class="form-group">
+                <label for="product">Product Name</label>
+                <input type="text" name="product" id="product">
+            </div>
+            <div class="form-group">
+                <label for="qty">Qty</label>
+                <input type="number" name="qty" id="qty">
+            </div>
+            <div class="form-group">
+                <label for="perPrice">Price</label>
+                <input type="number" name="perPrice" id="perPrice">
+            </div>
+            <div class="form-action">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+
+        <table class="list" id="storeList">
+            <thead>
+                <tr>
+                    <th>Product Code</th>
+                    <th>Product Name</th>
+                    <th>Qty</th>
+                    <th>Price</th>
+                    <th id="action">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+    <script src="crud.js"></script>
+</body>
+</html>
